@@ -1,46 +1,68 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default styling */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Add styling for the header */
 header {
-  background-color: #444444;
-  color: white;
-  padding: 1em;
+  background-color: #3498db;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Add styling for the navigation menu */
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 1em;
+nav ul li {
+  padding: 10px;
 }
 
-nav a {
-  color: white;
+nav ul li a {
+  color: #333;
   text-decoration: none;
 }
 
-section {
-  margin: 2em;
+/* Add styling for the main content */
+main {
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
-section h2 {
-  margin-top: 0;
-}
-
+/* Add styling for the footer */
 footer {
-  background-color: #444444;
-  color: white;
-  padding: 1em;
+  background-color: #3498db;
+  color: #fff;
   text-align: center;
+  padding: 10px;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
