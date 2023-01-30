@@ -1,68 +1,49 @@
-/* Reset default styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Add a gradient background */
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
-/* Add styling for the header */
+/* Add a box shadow to the header */
 header {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a border radius to the navigation menu */
+nav {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Add a hover effect to the navigation menu links */
+nav a:hover {
+  color: #fff;
   background-color: #3498db;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect to the main content images */
+main img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Add a hover effect to the footer links */
+footer a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+/* Add a CSS animation to the header */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header h1 {
-  color: #fff;
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-/* Add styling for the navigation menu */
-nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  padding: 10px;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* Add styling for the main content */
-main {
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Add styling for the footer */
-footer {
-  background-color: #3498db;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Add media queries for responsive design */
-@media (max-width: 600px) {
-  nav {
-    flex-wrap: wrap;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+  animation: fadeIn 2s;
 }
